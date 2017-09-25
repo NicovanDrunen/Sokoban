@@ -80,6 +80,30 @@ namespace Sokoban
             }
         }
 
+        public InputView InputView
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public OutputView OutputView
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
         public void CreateMaze()
         {
             throw new System.NotImplementedException();
