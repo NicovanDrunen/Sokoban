@@ -13,7 +13,7 @@ namespace Sokoban
             throw new System.NotImplementedException();
         }
 
-        public override void Move()
+        public void Move(Crate crate)
         {
             throw new NotImplementedException();
         }
