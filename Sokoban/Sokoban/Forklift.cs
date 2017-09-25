@@ -5,9 +5,10 @@ using System.Text;
 
 namespace Sokoban
 {
-    public class Forklift
+    public class Forklift : Movable
     {
-        public void Move()
+
+        public void Push()
         {
             throw new System.NotImplementedException();
         }

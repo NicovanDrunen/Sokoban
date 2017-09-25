@@ -5,11 +5,18 @@ using System.Text;
 
 namespace Sokoban
 {
-    public class Crate
+    public class Crate : Movable
     {
-        public void Move()
+        public bool IsOnGoal
         {
-            throw new System.NotImplementedException();
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
         }
     }
 }

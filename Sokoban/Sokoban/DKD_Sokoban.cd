@@ -11,9 +11,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Sokoban.Crate">
-    <Position X="3.25" Y="2.75" Width="1.5" />
+    <Position X="3.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>Crate.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -34,9 +34,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Sokoban.Forklift">
-    <Position X="0.75" Y="3.75" Width="1.5" />
+    <Position X="3" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Forklift.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -64,13 +64,30 @@
   <Class Name="Sokoban.Game">
     <Position X="0.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQKgAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAwAAAAAAAAACAAAAAAAAAAQKgAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Maze" />
+      <Property Name="Player2" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Player">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
       <Property Name="Forklift" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="Sokoban.Movable">
+    <Position X="5.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Movable.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

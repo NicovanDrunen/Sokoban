@@ -7,6 +7,7 @@ namespace Sokoban
 {
     public class Game
     {
+
         public Player Player
         {
             get
@@ -20,18 +21,6 @@ namespace Sokoban
         }
 
         public Maze Maze
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public Forklift Forklift
         {
             get
             {
@@ -65,6 +54,35 @@ namespace Sokoban
             set
             {
             }
+        }
+
+        public Player Player1
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public Player Player2
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public void CreateMaze()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
