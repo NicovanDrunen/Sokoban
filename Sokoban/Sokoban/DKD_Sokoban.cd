@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Sokoban.Tile">
-    <Position X="1.75" Y="1" Width="1.5" />
+    <Position X="0.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAABAAAAAAAABAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Tile.cs</FileName>
@@ -11,14 +11,14 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Sokoban.Crate">
-    <Position X="3.25" Y="6.75" Width="1.5" />
+    <Position X="3" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>Crate.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sokoban.Maze">
-    <Position X="5.75" Y="3" Width="1.5" />
+    <Position X="6.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>Maze.cs</FileName>
@@ -29,70 +29,81 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Sokoban.Forklift">
-    <Position X="5.5" Y="5" Width="1.5" />
+    <Position X="4.75" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Forklift.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sokoban.Wall">
-    <Position X="2.75" Y="3" Width="1.5" />
+    <Position X="0.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Wall.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sokoban.Goal">
-    <Position X="0.5" Y="5.25" Width="1.5" />
+    <Position X="2.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Goal.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sokoban.Floor">
-    <Position X="0.5" Y="3" Width="1.5" />
+    <Position X="0.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Floor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sokoban.Game">
-    <Position X="8.75" Y="2.25" Width="1.5" />
+    <Position X="5.5" Y="2.25" Width="1.5" />
     <AssociationLine Name="Maze" Type="Sokoban.Maze" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="8.75" Y="2.688" />
-        <Point X="8.344" Y="2.688" />
-        <Point X="8.344" Y="3.434" />
-        <Point X="7.25" Y="3.434" />
+        <Point X="7" Y="2.609" />
+        <Point X="9.25" Y="2.609" />
+        <Point X="9.25" Y="7.184" />
+        <Point X="8" Y="7.184" />
       </Path>
     </AssociationLine>
-    <AssociationLine Name="Player2" Type="Sokoban.Player" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Player" Type="Sokoban.Player" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="8.75" Y="3.75" />
-        <Point X="8.547" Y="3.75" />
-        <Point X="8.547" Y="7.125" />
-        <Point X="8.75" Y="7.125" />
-        <Point X="8.75" Y="7.5" />
+        <Point X="7" Y="3.223" />
+        <Point X="8.25" Y="3.223" />
+        <Point X="8.25" Y="5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="InputView" Type="Sokoban.InputView" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.625" Y="2.25" />
+        <Point X="6.625" Y="1.184" />
+        <Point X="7.75" Y="1.184" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="OutputView" Type="Sokoban.OutputView" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.125" Y="2.25" />
+        <Point X="6.125" Y="1.188" />
+        <Point X="5" Y="1.188" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAwAIAAAAAAACAAAAAAAAEAQKgAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAEAQKgAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Maze" />
-      <Property Name="Player2" />
+      <Property Name="Player" />
       <Property Name="InputView" />
       <Property Name="OutputView" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Sokoban.Player">
-    <Position X="8" Y="7.5" Width="1.5" />
-    <AssociationLine Name="Forklift" Type="Sokoban.Forklift" FixedFromPoint="true" FixedToPoint="true">
+    <Position X="7.5" Y="5" Width="1.5" />
+    <AssociationLine Name="Forklift" Type="Sokoban.Forklift" FixedToPoint="true">
       <Path>
-        <Point X="8.25" Y="7.5" />
-        <Point X="8.25" Y="5.219" />
-        <Point X="7" Y="5.219" />
+        <Point X="7.5" Y="5.611" />
+        <Point X="6.25" Y="5.611" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -104,32 +115,49 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Sokoban.Movable">
-    <Position X="3.25" Y="5.25" Width="1.5" />
+    <Position X="3" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Movable.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sokoban.InputView">
-    <Position X="8.75" Y="5.5" Width="1.5" />
+    <Position X="7.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>InputView.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sokoban.OutputView">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Position X="3.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>OutputView.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Sokoban.Program">
-    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Position X="2.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="Sokoban.Parser">
+    <Position X="9.75" Y="2.25" Width="1.5" />
+    <AssociationLine Name="Maze" Type="Sokoban.Maze" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="3.118" />
+        <Point X="10.5" Y="7.438" />
+        <Point X="8" Y="7.438" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Parser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Maze" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

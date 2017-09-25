@@ -12,5 +12,10 @@ namespace Sokoban
         {
             throw new System.NotImplementedException();
         }
+
+        public override void Move()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

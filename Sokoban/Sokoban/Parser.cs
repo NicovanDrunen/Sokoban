@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Sokoban
 {
-    public class Crate : Movable
+    public class Parser
     {
-        public bool IsOnGoal
+        public Maze Maze
         {
             get
             {
@@ -17,11 +17,6 @@ namespace Sokoban
             set
             {
             }
-        }
-
-        public override void Move()
-        {
-            throw new NotImplementedException();
         }
     }
 }

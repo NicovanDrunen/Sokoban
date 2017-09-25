@@ -8,18 +8,6 @@ namespace Sokoban
     public class Game
     {
 
-        public Player Player
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
         public Maze Maze
         {
             get
@@ -56,19 +44,7 @@ namespace Sokoban
             }
         }
 
-        public Player Player1
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public Player Player2
+        public Player Player
         {
             get
             {
