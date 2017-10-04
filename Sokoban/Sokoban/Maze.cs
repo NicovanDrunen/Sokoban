@@ -30,5 +30,22 @@ namespace Sokoban
             {
             }
         }
+
+        public Crate Crate
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public void MoveForklift()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

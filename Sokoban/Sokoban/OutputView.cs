@@ -7,5 +7,9 @@ namespace Sokoban
 {
     public class OutputView
     {
+        public void ShowMaze()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

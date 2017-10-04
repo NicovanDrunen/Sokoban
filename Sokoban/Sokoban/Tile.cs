@@ -7,7 +7,43 @@ namespace Sokoban
 {
     public abstract class Tile
     {
-        public Crate Crate
+        public Tile TileWest
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public Tile TileNorth
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public Tile TileEast
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public Tile TileSouth
         {
             get
             {

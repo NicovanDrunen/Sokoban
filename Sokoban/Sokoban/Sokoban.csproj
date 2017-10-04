@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Blank.cs" />
     <Compile Include="Crate.cs" />
     <Compile Include="Floor.cs" />
     <Compile Include="Forklift.cs" />
