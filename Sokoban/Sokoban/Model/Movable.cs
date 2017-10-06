@@ -7,6 +7,8 @@ namespace Sokoban.Model
 {
     public abstract class Movable
     {
+        public char Symbol;
+
         public Tile Location;
 
         public abstract void Move(Direction direction);

@@ -9,10 +9,9 @@ namespace Sokoban.Model
 {
     public class Forklift : Movable
     {
-        public char Symbol = '@';
-
         public Forklift(Tile tileWithForklift)
         {
+            Symbol = '@';
             Location = tileWithForklift;
         }
 

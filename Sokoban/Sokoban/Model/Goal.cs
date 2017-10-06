@@ -7,6 +7,9 @@ namespace Sokoban.Model
 {
     public class Goal : Floor
     {
-        public char Symbol = 'x';
+        public Goal()
+        {
+            Symbol = 'x';
+        }
     }
 }

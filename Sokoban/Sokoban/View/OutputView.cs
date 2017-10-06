@@ -11,7 +11,23 @@ namespace Sokoban.View
         public void ShowMaze(Maze maze)
         {
             Console.Clear();
-            Console.WriteLine("hier komt het Doolhof!!!");
+            Tile currentTile = maze.firstTile;
+            do
+            {
+                string line = "";
+                do
+                {
+                    if (currentTile.Content != null)
+                    {
+                        line += currentTile.Content.Symbol;
+                    }
+                    else
+                    {
+                        line += currentTile.Symbol;
+                    }
+                } while (currentTile.TileEast != null);
+                Console.WriteLine(line);
+            } while (currentTile.TileSouth != null);
         }
 
         public void ShowStartGame()

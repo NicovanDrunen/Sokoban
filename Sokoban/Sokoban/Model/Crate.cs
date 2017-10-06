@@ -7,10 +7,10 @@ namespace Sokoban.Model
 {
     public class Crate : Movable
     {
-        public char Symbol = 'o';
 
         public Crate(Tile tilewithCrate)
         {
+            Symbol = 'o';
             Location = tilewithCrate;
         }
 

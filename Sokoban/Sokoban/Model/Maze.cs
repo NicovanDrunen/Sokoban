@@ -11,6 +11,8 @@ namespace Sokoban.Model
 
         private List<Crate> _crates = new List<Crate>();
 
+        public Tile firstTile;
+
         public bool IsSolved()
         {
             foreach (Crate crate in _crates)

@@ -7,6 +7,8 @@ namespace Sokoban.Model
 {
     public abstract class Tile
     {
+        public int Symbol;
+
         public Tile TileWest
         {
             get

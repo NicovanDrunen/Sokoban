@@ -7,7 +7,10 @@ namespace Sokoban.Model
 {
     public class Floor : Tile
     {
-        public char Symbol = '.';
+        public Floor()
+        {
+            Symbol = '.';
+        }
 
         public override Movable Content { get; set; }
 

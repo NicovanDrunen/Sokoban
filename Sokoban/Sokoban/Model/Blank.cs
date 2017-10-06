@@ -7,7 +7,10 @@ namespace Sokoban.Model
 {
     public class Blank : Tile
     {
-        public char Symbol = ' ';
+        public Blank()
+        {
+            Symbol = ' ';
+        }
 
         public override Movable Content { get; set; }
         public override void MoveTo(Movable movable)
