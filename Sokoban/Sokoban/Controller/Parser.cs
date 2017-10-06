@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Sokoban.Model;
 
-namespace Sokoban
+namespace Sokoban.Controller
 {
-    public class Player
+    public class Parser
     {
-        public Forklift Forklift
+        public Maze Maze
         {
             get
             {
@@ -17,6 +18,11 @@ namespace Sokoban
             set
             {
             }
+        }
+
+        public void LoadMaze(int Number)
+        {
+            
         }
     }
 }

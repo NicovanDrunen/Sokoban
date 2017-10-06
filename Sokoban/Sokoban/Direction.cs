@@ -5,8 +5,11 @@ using System.Text;
 
 namespace Sokoban
 {
-    public abstract class Movable
+    public enum Direction
     {
-        public abstract void Move();
+        North,
+        East,
+        South,
+        West
     }
 }

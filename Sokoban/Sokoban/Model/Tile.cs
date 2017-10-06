@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Sokoban
+namespace Sokoban.Model
 {
     public abstract class Tile
     {
+        public int Symbol;
+
         public Tile TileWest
         {
             get
@@ -55,8 +57,13 @@ namespace Sokoban
             }
         }
 
-        protected abstract void MoveTo();
+        public abstract Movable Content
+        {
+            get;
 
-        protected abstract void MoveCrateTo();
+            set;
+        }
+
+        public abstract void MoveTo(Movable movable);
     }
 }
