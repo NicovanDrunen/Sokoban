@@ -41,7 +41,7 @@ namespace Sokoban.Controller
                     parser.LoadMaze(MazeNumber);
                     ShowStart = false;
                 }
-                _outputView.ShowMaze();
+                _outputView.ShowMaze(_maze);
                 int UserInput = _inputView.AskInput();
                 if (UserInput == -1)
                 {
@@ -55,7 +55,6 @@ namespace Sokoban.Controller
                 else
                 {
                     _maze.Forklift.Move((Direction) UserInput);
-                    Console.WriteLine("forlift bewogen naar" + (Direction) UserInput);
                     if (_maze.IsSolved())
                     {
                         _isGameOver = true;
