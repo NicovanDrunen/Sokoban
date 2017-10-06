@@ -43,22 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Blank.cs" />
-    <Compile Include="Crate.cs" />
-    <Compile Include="Floor.cs" />
-    <Compile Include="Forklift.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="Goal.cs" />
-    <Compile Include="InputView.cs" />
-    <Compile Include="Maze.cs" />
-    <Compile Include="Movable.cs" />
-    <Compile Include="OutputView.cs" />
-    <Compile Include="Parser.cs" />
-    <Compile Include="Player.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Model\Blank.cs" />
+    <Compile Include="Model\Crate.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="Model\Floor.cs" />
+    <Compile Include="Model\Forklift.cs" />
+    <Compile Include="Controller\Game.cs" />
+    <Compile Include="Model\Goal.cs" />
+    <Compile Include="View\InputView.cs" />
+    <Compile Include="Model\Maze.cs" />
+    <Compile Include="Model\Movable.cs" />
+    <Compile Include="View\OutputView.cs" />
+    <Compile Include="Controller\Parser.cs" />
+    <Compile Include="Controller\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tile.cs" />
-    <Compile Include="Wall.cs" />
+    <Compile Include="Model\Tile.cs" />
+    <Compile Include="Model\Wall.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

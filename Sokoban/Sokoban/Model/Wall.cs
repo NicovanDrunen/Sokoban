@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Sokoban
+namespace Sokoban.Model
 {
     public class Wall : Tile
     {
-        protected override void MoveCrateTo()
-        {
-            throw new NotImplementedException();
-        }
+        public char Symbol = '█';
+
+        public override Movable Content { get; set; }
 
         protected override void MoveTo()
         {

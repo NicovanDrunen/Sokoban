@@ -1,2 +1,7 @@
 c:\users\nico\documents\visual studio 2015\Projects\Sokoban\Sokoban\bin\Debug\Sokoban.exe.config
 C:\Users\Nico\Documents\GitHub\Sokoban\Sokoban\Sokoban\bin\Debug\Sokoban.exe.config
+C:\Users\Nico\Documents\GitHub\Sokoban\Sokoban\Sokoban\obj\Debug\Sokoban.csprojResolveAssemblyReference.cache
+C:\Users\Nico\Documents\GitHub\Sokoban\Sokoban\Sokoban\bin\Debug\Sokoban.exe
+C:\Users\Nico\Documents\GitHub\Sokoban\Sokoban\Sokoban\bin\Debug\Sokoban.pdb
+C:\Users\Nico\Documents\GitHub\Sokoban\Sokoban\Sokoban\obj\Debug\Sokoban.exe
+C:\Users\Nico\Documents\GitHub\Sokoban\Sokoban\Sokoban\obj\Debug\Sokoban.pdb

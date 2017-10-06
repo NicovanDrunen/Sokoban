@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Sokoban
+namespace Sokoban.Model
 {
-    public class Player
+    public class Crate : Movable
     {
-        public Forklift Forklift
+        public char Symbol = 'o';
+
+        public bool IsOnGoal
         {
             get
             {
@@ -17,6 +19,11 @@ namespace Sokoban
             set
             {
             }
+        }
+
+        public override void Move(Direction direction)
+        {
+            throw new NotImplementedException();
         }
     }
 }

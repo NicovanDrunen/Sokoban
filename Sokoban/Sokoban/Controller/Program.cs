@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sokoban
+namespace Sokoban.Controller
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Game game = new Game();
+            game.Start();
         }
     }
 }
