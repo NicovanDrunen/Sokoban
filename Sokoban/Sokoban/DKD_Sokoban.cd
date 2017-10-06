@@ -22,8 +22,8 @@
       <Path>
         <Point X="3.25" Y="6.812" />
         <Point X="3.625" Y="6.812" />
-        <Point X="3.625" Y="5.052" />
-        <Point X="4.25" Y="5.052" />
+        <Point X="3.625" Y="5.028" />
+        <Point X="4.25" Y="5.028" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -99,9 +99,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Sokoban.Model.Movable">
-    <Position X="4.25" Y="4.5" Width="1.5" />
+    <Position X="4.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAIAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Movable.cs</FileName>
     </TypeIdentifier>
   </Class>

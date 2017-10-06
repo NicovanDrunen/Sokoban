@@ -10,10 +10,8 @@ namespace Sokoban.Model
         public char Symbol = ' ';
 
         public override Movable Content { get; set; }
-
-        protected override void MoveTo()
+        public override void MoveTo(Movable movable)
         {
-            throw new NotImplementedException();
         }
     }
 }

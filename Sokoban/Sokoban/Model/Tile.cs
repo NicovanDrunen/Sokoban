@@ -62,6 +62,6 @@ namespace Sokoban.Model
             set;
         }
 
-        protected abstract void MoveTo();
+        public abstract void MoveTo(Movable movable);
     }
 }

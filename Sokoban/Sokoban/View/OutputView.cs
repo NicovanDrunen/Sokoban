@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Sokoban.Model;
 
 namespace Sokoban.View
 {
     public class OutputView
     {
-        public void ShowMaze()
+        public void ShowMaze(Maze maze)
         {
             Console.Clear();
             Console.WriteLine("hier komt het Doolhof!!!");
