@@ -11,11 +11,13 @@ namespace Sokoban.View
         public void ShowMaze(Maze maze)
         {
             Console.Clear();
-            Tile currentTile = maze.firstTile;
-            do
+            Tile currentTile;
+            Tile rowTile = maze.firstTile;
+            while (rowTile != null)
             {
                 string line = "";
-                do
+                currentTile = rowTile;
+                while (currentTile != null)
                 {
                     if (currentTile.Content != null)
                     {
@@ -25,9 +27,11 @@ namespace Sokoban.View
                     {
                         line += currentTile.Symbol;
                     }
-                } while (currentTile.TileEast != null);
+                    currentTile = currentTile.TileEast ?? null;
+                }
+                rowTile = rowTile.TileSouth ?? null;
                 Console.WriteLine(line);
-            } while (currentTile.TileSouth != null);
+            }
         }
 
         public void ShowStartGame()

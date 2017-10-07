@@ -14,7 +14,7 @@ namespace Sokoban.Model
             Location = tilewithCrate;
         }
 
-        public bool IsOnGoal;
+        public bool IsOnGoal = false;
 
         public override void Move(Direction direction)
         {
@@ -35,7 +35,7 @@ namespace Sokoban.Model
                     break;
             }
 
-            if (nextTile.Content == null)
+            if (nextTile.Content == null && nextTile.GetType() != typeof(Wall))
             {
                 nextTile.MoveTo(this);
                 Location.Content = null;

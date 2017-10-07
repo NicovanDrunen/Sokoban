@@ -7,62 +7,17 @@ namespace Sokoban.Model
 {
     public abstract class Tile
     {
-        public int Symbol;
+        public char Symbol;
 
-        public Tile TileWest
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public Tile TileWest;
 
-            set
-            {
-            }
-        }
+        public Tile TileNorth;
 
-        public Tile TileNorth
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public Tile TileEast;
 
-            set
-            {
-            }
-        }
+        public Tile TileSouth;
 
-        public Tile TileEast
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public Tile TileSouth
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
-
-        public abstract Movable Content
-        {
-            get;
-
-            set;
-        }
+        public  Movable Content;
 
         public abstract void MoveTo(Movable movable);
     }

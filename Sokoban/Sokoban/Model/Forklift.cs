@@ -39,7 +39,7 @@ namespace Sokoban.Model
                     break;
             }
 
-            if (nextTile.Content.GetType() == typeof(Crate))
+            if (nextTile.Content != null && nextTile.Content.GetType() == typeof(Crate))
             {
                 Push(nextTile.Content, direction);
             }

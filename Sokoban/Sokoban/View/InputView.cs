@@ -19,7 +19,7 @@ namespace Sokoban.View
             }
             else if(Input.KeyChar == 's')
             {
-                MazeNumber = 0;
+                MazeNumber = -1;
             }
             else
             {
@@ -55,11 +55,11 @@ namespace Sokoban.View
                     break;
 
                 case ConsoleKey.R:
-                    UserInput = -1;
+                    UserInput = -2;
                     break;
 
                 case ConsoleKey.S:
-                    UserInput = 0;
+                    UserInput = -1;
                     break;
 
                 default:

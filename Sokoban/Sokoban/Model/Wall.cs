@@ -11,8 +11,7 @@ namespace Sokoban.Model
         {
             Symbol = '█';
         }
-
-        public override Movable Content { get; set; }
+        
         public override void MoveTo(Movable movable)
         {
         }
