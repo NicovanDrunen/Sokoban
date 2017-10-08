@@ -13,7 +13,7 @@ namespace Sokoban.Controller
         private int _numberOfMoves = 0;
         private InputView _inputView;
         private OutputView _outputView;
-        private Maze _maze = new Maze();
+        private Maze _maze;
 
         public Game()
         {
@@ -37,9 +37,9 @@ namespace Sokoban.Controller
                         _outputView.ShowStopGame();
                         break;
                     }
-                    //Parser parser = new Parser();
-                    //parser.LoadMaze(MazeNumber);
-                    test();
+                    Parser parser = new Parser();
+                    _maze = parser.LoadMaze(MazeNumber);
+                    //test();
                     ShowStart = false;
                 }
                 _outputView.ShowMaze(_maze);
@@ -56,6 +56,7 @@ namespace Sokoban.Controller
                 else
                 {
                     _maze.Forklift.Move((Direction) UserInput);
+                    _numberOfMoves++;
                     if (_maze.IsSolved())
                     {
                         _isGameOver = true;
