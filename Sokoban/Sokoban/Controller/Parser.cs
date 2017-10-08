@@ -53,6 +53,13 @@ namespace Sokoban.Controller
                                 currentTile = new Floor();
                                 currentTile.Content = _maze.addCrate(new Crate(currentTile));
                                 break;
+                            case '~':
+                                currentTile = new Broken();
+                                break;
+                            case '$':
+                                currentTile = new Floor();
+                                currentTile.Content = _maze.AddSleepingSokoban(new SleepingSokoban(currentTile));
+                                break;
                             default:
                                 currentTile = new Floor();
                                 break;

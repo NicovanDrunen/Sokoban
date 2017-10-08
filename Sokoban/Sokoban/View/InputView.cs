@@ -10,10 +10,10 @@ namespace Sokoban.View
         public int AskMazeNumber()
         {
             int MazeNumber = 0;
-            Console.WriteLine("> Kies een doolhof (1 - 4), s = stop");
+            Console.WriteLine("> Kies een doolhof (1 - 6), s = stop");
             ConsoleKeyInfo Input = Console.ReadKey();
             Console.WriteLine("");
-            if (char.IsDigit(Input.KeyChar) && Input.KeyChar <= '4' && Input.KeyChar >= '1')
+            if (char.IsDigit(Input.KeyChar) && Input.KeyChar <= '6' && Input.KeyChar >= '1')
             {
                 MazeNumber = (int)Char.GetNumericValue(Input.KeyChar);
             }

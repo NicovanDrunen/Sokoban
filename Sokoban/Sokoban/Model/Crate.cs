@@ -16,6 +16,11 @@ namespace Sokoban.Model
 
         public bool IsOnGoal = false;
 
+        public override void Push(Movable movable, Direction direction)
+        {
+            throw new NotImplementedException();
+        }
+
         public override void Move(Direction direction)
         {
             Tile nextTile = new Floor();
@@ -51,6 +56,11 @@ namespace Sokoban.Model
                 IsOnGoal = false;
                 Symbol = 'o';
             }
+        }
+
+        public override void WakeUp()
+        {
+            
         }
     }
 }

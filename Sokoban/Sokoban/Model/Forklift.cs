@@ -15,9 +15,13 @@ namespace Sokoban.Model
             Location = tileWithForklift;
         }
 
-        public void Push(Movable crate, Direction direction)
+        public override void Push(Movable movable, Direction direction)
         {
-            crate.Move(direction);
+            if (movable.GetType() == typeof(Crate))
+            {
+                movable.Move(direction);
+            }
+            movable.WakeUp();
         }
 
         public override void Move(Direction direction)
@@ -39,7 +43,7 @@ namespace Sokoban.Model
                     break;
             }
 
-            if (nextTile.Content != null && nextTile.Content.GetType() == typeof(Crate))
+            if (nextTile.Content != null)
             {
                 Push(nextTile.Content, direction);
             }
@@ -49,6 +53,10 @@ namespace Sokoban.Model
                 Location.Content = null;
                 Location = nextTile;
             }
+        }
+
+        public override void WakeUp()
+        {
         }
     }
 }
