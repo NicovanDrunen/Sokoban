@@ -68,34 +68,34 @@ namespace Sokoban.Controller
             }
         }
 
-        public void test()
-        {
-            Wall wall1 = new Wall();
-            Goal floor1 = new Goal();
-            Floor floor2 = new Floor();
-            Floor floor3 = new Floor();
-            Floor floor4 = new Floor();
-            Floor floor5 = new Floor();
-            wall1.TileEast = floor1;
-            floor1.TileEast = floor2;
-            floor1.TileSouth = floor5;
-            floor1.TileWest = wall1;
-            floor2.TileWest = floor1;
-            floor3.TileWest = floor2;
-            floor2.TileEast = floor3;
-            wall1.TileSouth = floor4;
-            floor4.TileEast = floor5;
-            floor5.TileWest = floor4;
-            floor4.TileNorth = wall1;
-            floor5.TileNorth = floor1;
-            _maze.firstTile = wall1;
-            Forklift fl = new Forklift(floor3);
-            floor3.Content = fl;
-            _maze.Forklift = fl;
-            Crate crate = new Crate(floor2);
-            floor2.Content = crate;
-            _maze.addCrate(crate);
-        }
+        //public void test()
+        //{
+        //    Wall wall1 = new Wall();
+        //    Goal floor1 = new Goal();
+        //    Floor floor2 = new Floor();
+        //    Floor floor3 = new Floor();
+        //    Floor floor4 = new Floor();
+        //    Floor floor5 = new Floor();
+        //    wall1.TileEast = floor1;
+        //    floor1.TileEast = floor2;
+        //    floor1.TileSouth = floor5;
+        //    floor1.TileWest = wall1;
+        //    floor2.TileWest = floor1;
+        //    floor3.TileWest = floor2;
+        //    floor2.TileEast = floor3;
+        //    wall1.TileSouth = floor4;
+        //    floor4.TileEast = floor5;
+        //    floor5.TileWest = floor4;
+        //    floor4.TileNorth = wall1;
+        //    floor5.TileNorth = floor1;
+        //    _maze.firstTile = wall1;
+        //    Forklift fl = new Forklift(floor3);
+        //    floor3.Content = fl;
+        //    _maze.Forklift = fl;
+        //    Crate crate = new Crate(floor2);
+        //    floor2.Content = crate;
+        //    _maze.addCrate(crate);
+        //}
 
     }
 }
