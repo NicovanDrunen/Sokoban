@@ -26,7 +26,7 @@ namespace Sokoban.Model
 
         public override void Move(Direction direction)
         {
-            Tile nextTile = new Floor();
+            Tile nextTile;
             switch(direction)
             {
                 case Direction.North:
@@ -40,6 +40,9 @@ namespace Sokoban.Model
                     break;
                 case Direction.West:
                     nextTile = Location.TileWest;
+                    break;
+                default:
+                    nextTile = Location;
                     break;
             }
 

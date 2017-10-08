@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +9,7 @@ namespace Sokoban.Controller
 {
     public class Parser
     {
-        private Maze _maze;
+        private Sokoban.Model.Maze _maze;
         private FileStream _inputStream;
         private StreamReader _reader;
         private string _path;
