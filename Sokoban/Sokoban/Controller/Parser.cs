@@ -24,6 +24,8 @@ namespace Sokoban.Controller
                 _reader = new StreamReader(_inputStream);
                 //Get first line from File.
                 string lineString = _reader.ReadLine();
+                Tile previousRowTile = null;
+                Tile upperTile = null;
                 do
                 {
                     //Huidige werking: Leest alle lijnen en overschrijdt steeds de vorige lijn als nieuwe lijn. De laatste lijn in het gekozen bestand wordt dus als enige uitgelezen.
@@ -37,23 +39,64 @@ namespace Sokoban.Controller
                             case '#':
                                 currentTile = new Wall();
                                 break;
+                            case ' ':
+                                currentTile = new Blank();
+                                break;
+                            case 'x':
+                                currentTile = new Goal();
+                                break;
+                            case '@':
+                                currentTile = new Floor();
+                                _maze.Forklift = new Forklift(currentTile);
+                                currentTile.Content = _maze.Forklift;
+                                break;
+                            case 'o':
+                                currentTile = new Floor();
+                                currentTile.Content = _maze.addCrate(new Crate(currentTile));
+                                break;
                             default:
                                 currentTile = new Floor();
                                 break;
                         }
-                        if (previousTile == null)
+                        if (previousTile == null && previousRowTile == null)
                         {
                             _maze.firstTile = currentTile;
                             previousTile = currentTile;
                         }
-                        else
+                        else if (previousTile != null && previousRowTile == null)
                         {
                             previousTile.TileEast = currentTile;
+                            currentTile.TileWest = previousTile;
+                            previousTile = currentTile;
+                        }
+                        else if (previousTile == null && previousRowTile != null)
+                        {
+                            currentTile.TileNorth = upperTile;
+                            upperTile.TileSouth = currentTile;
+                            upperTile = upperTile.TileEast;
+                            previousTile = currentTile;
+                        }
+                        else
+                        {
+                            currentTile.TileNorth = upperTile;
+                            upperTile.TileSouth = currentTile;
+                            previousTile.TileEast = currentTile;
+                            currentTile.TileWest = previousTile;
+                            upperTile = upperTile.TileEast;
                             previousTile = currentTile;
                         }
 
                     }
                     //get next line from file
+                    if (previousRowTile == null)
+                    {
+                        previousRowTile = _maze.firstTile;
+                    }
+                    else
+                    {
+                        previousRowTile = previousRowTile.TileSouth;
+                    }
+                    upperTile = previousRowTile;
                     lineString = _reader.ReadLine();
                 }
                 while (lineString != null);

@@ -43,7 +43,7 @@ namespace Sokoban.Model
             {
                 Push(nextTile.Content, direction);
             }
-            if (nextTile.Content == null)
+            if (nextTile.Content == null && nextTile.GetType() != typeof(Wall))
             {
                 nextTile.MoveTo(this);
                 Location.Content = null;

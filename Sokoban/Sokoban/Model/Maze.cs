@@ -25,9 +25,10 @@ namespace Sokoban.Model
             return true;
         }
 
-        public void addCrate(Crate crate)
+        public Crate addCrate(Crate crate)
         {
             _crates.Add(crate);
+            return crate;
         }
     }
 }
