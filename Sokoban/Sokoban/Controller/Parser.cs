@@ -28,7 +28,6 @@ namespace Sokoban.Controller
                 Tile upperTile = null;
                 do
                 {
-                    //Huidige werking: Leest alle lijnen en overschrijdt steeds de vorige lijn als nieuwe lijn. De laatste lijn in het gekozen bestand wordt dus als enige uitgelezen.
                     char[] charsInLine = lineString.ToCharArray();
                     Tile previousTile = null;
                     Tile currentTile = null;
@@ -87,7 +86,6 @@ namespace Sokoban.Controller
                         }
 
                     }
-                    //get next line from file
                     if (previousRowTile == null)
                     {
                         previousRowTile = _maze.firstTile;
@@ -97,6 +95,7 @@ namespace Sokoban.Controller
                         previousRowTile = previousRowTile.TileSouth;
                     }
                     upperTile = previousRowTile;
+                    //get next line from file
                     lineString = _reader.ReadLine();
                 }
                 while (lineString != null);

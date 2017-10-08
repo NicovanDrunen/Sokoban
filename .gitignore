@@ -49,3 +49,7 @@ Temporary Items
 *.txt
 
 Sokoban/Sokoban/obj/Debug/DesignTimeResolveAssemblyReferencesInput\.cache
+
+Sokoban/\.vs/Sokoban/v15/\.suo
+
+*.cache
