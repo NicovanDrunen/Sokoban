@@ -11,6 +11,9 @@ namespace Sokoban.Model
 
         public Tile Location;
 
+        public abstract void Push(Movable movable, Direction direction);
         public abstract void Move(Direction direction);
+
+        public abstract void WakeUp();
     }
 }

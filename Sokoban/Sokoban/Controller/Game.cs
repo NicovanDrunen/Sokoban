@@ -57,6 +57,7 @@ namespace Sokoban.Controller
                 {
                     _maze.Forklift.Move((Direction) UserInput);
                     _numberOfMoves++;
+                    _maze.MoveSleepingSokobans();
                     if (_maze.IsSolved())
                     {
                         _isGameOver = true;
