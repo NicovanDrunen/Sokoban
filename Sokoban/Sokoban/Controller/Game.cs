@@ -10,7 +10,7 @@ namespace Sokoban.Controller
     public class Game
     {
         private bool _isGameOver = false;
-        private int _numberOfMoves = 0;
+        private int _numberOfMoves;
         private InputView _inputView;
         private OutputView _outputView;
         private Maze _maze;
@@ -31,6 +31,7 @@ namespace Sokoban.Controller
                 if (ShowStart)
                 {
                     _outputView.ShowStartGame();
+                    _numberOfMoves = 0;
                     int MazeNumber = _inputView.AskMazeNumber();
                     if (MazeNumber == -1)
                     {
